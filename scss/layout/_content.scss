@@ -120,3 +120,72 @@ section p {
         margin-right: 0.3rem;
     }
 }
+
+.error {
+    color: $error-color;
+    font-weight: bold;
+    font-size: $h6-size;
+    margin: 0 0 1rem 3rem;
+}
+
+#success {
+    width: 50%;
+    height: 50rem;
+    background-color: #999;
+    color: $dark-text;
+    margin: 5.4rem 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include mq(medium) {
+        width: 40%;
+        height: 35rem;
+    }
+    @include mq(small) {
+        width: 30%;
+        height: 20rem;
+        margin: 5.4rem 0 0 3rem;
+    }
+    
+    
+    & h2 {
+        padding: 1.5rem;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        
+        @include mq(small) {
+            margin: 0 0 0 1.5rem;
+        }
+    }
+}
+
+#success img {
+    height: 25%;
+    width: 25%;
+    margin: 12rem 0 0 0;
+    
+    @include mq(medium) {
+        margin: 8rem 0 0 0;
+    }
+    @include mq(small) {
+        margin: 3rem 0 0 0;
+    }
+}
+
+#success p {
+    text-align: center;
+    font-size: $h2-size;
+    font-weight: bold;
+    margin: 4rem 0 16rem 0;
+    
+    @include mq(medium) {
+        font-size: $h3-size;
+        margin: 2rem 0 12rem 0;
+    }
+    @include mq(small) {
+        font-size: $h4-size;
+        margin: 1rem 0 10rem 0;
+    }
+}

@@ -263,3 +263,68 @@ section p {
     background-size: contain;
     vertical-align: text-bottom;
     margin-right: 0.3rem; }
+
+.error {
+  color: #b52c2c;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 3rem; }
+
+#success {
+  width: 50%;
+  height: 50rem;
+  background-color: #999;
+  color: #2d2d2d;
+  margin: 5.4rem 0 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1199px) {
+    #success {
+      width: 40%;
+      height: 35rem; } }
+  @media (max-width: 599px) {
+    #success {
+      width: 30%;
+      height: 20rem;
+      margin: 5.4rem 0 0 3rem; } }
+  #success h2 {
+    padding: 1.5rem;
+    position: absolute;
+    top: 7rem;
+    left: 0; }
+    @media (max-width: 599px) {
+      #success h2 {
+        margin: 0 0 0 1.5rem; } }
+
+#success img {
+  height: 25%;
+  width: 25%;
+  margin: 12rem 0 0 0; }
+  @media (max-width: 1199px) {
+    #success img {
+      margin: 8rem 0 0 0; } }
+  @media (max-width: 599px) {
+    #success img {
+      margin: 3rem 0 0 0; } }
+
+#success p {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 4rem 0 16rem 0; }
+  @media (max-width: 1199px) {
+    #success p {
+      font-size: 1.9rem;
+      margin: 2rem 0 12rem 0; } }
+  @media (max-width: 599px) {
+    #success p {
+      font-size: 1.6rem;
+      margin: 1rem 0 10rem 0; } }
