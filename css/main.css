@@ -147,7 +147,8 @@ main {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding: 0 0 5rem 0; }
   @media (max-width: 599px) {
     main {
       -webkit-box-orient: vertical;
@@ -179,6 +180,9 @@ input {
   width: 22.5rem;
   padding: 0 0.5rem 0 0.5rem; }
 
+select:focus, input:focus {
+  border: 1px solid #2d2d2d; }
+
 label, select, button {
   margin: 0 0 0 3rem; }
 
@@ -187,7 +191,15 @@ label {
 
 select {
   height: 2.5rem;
-  width: 22.5rem; }
+  width: 22.5rem;
+  background-color: #ccc;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 0.5rem 0 0.5rem;
+  background: url("../images/down-chevron.svg") 96%/15% no-repeat #ccc;
+  background-size: 8%;
+  border: none; }
 
 button {
   margin-top: 2rem;
@@ -195,7 +207,7 @@ button {
   padding: 1rem 0 1rem 0;
   border-radius: 4px;
   color: #fff;
-  background-color: #4a90e0; }
+  background-color: #0000cc; }
 
 label:nth-of-type(1)::after, label:nth-of-type(2)::after, label:nth-of-type(3)::after {
   content: "Required";
@@ -227,7 +239,7 @@ aside {
 
 section {
   padding: 1rem;
-  background-color: #4a90e0;
+  background-color: #0000cc;
   color: #fff;
   margin: 0 0 2rem 0; }
 

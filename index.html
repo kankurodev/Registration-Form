@@ -8,24 +8,27 @@
 	</head>
 	<body>
         <div class='wrapper'>
-            <header>
+            <header role='banner'>
                 <h1>Super Valid Registration Form</h1>
             </header>
             <main>
-                <form>
+                <form role='form'>
                     <h2>Register</h2>
                     <label for='name'>Name</label>
-                    <input type="text" name="name" id="name">
-                    <label for='email'>Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for='password'>Password</label>
-                    <input type="password" name="password" id="password">
-                    <label for='phone'>Phone</label>
-                    <input type="tel" name="phone" id="phone">
-                    <label>Country</label>
+                    <input type="text" name="name" id="name" required pattern='^[A-zÀ-ú\-" ]+$'>
                     
-                    <select name="country">
-                        <option value="">Country...</option>
+                    <label for='email'>Email</label>
+                    <input type="email" name="email" id="email" required pattern="[a-z0-9]+[_a-z0-9\.-]*[a-z0-9]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})">
+                    
+                    <label for='password'>Password</label>
+                    <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                    
+                    <label for='phone'>Phone</label>
+                    <input type="tel" name="phone" id="phone" pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})">
+                    
+                    <label for='country'>Country</label>
+                    <select name="country" id="country">
+                        <option value="">Select Country</option>
                         <option value="Afganistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -278,7 +281,7 @@
                     <button type="submit" name="register" id="register">Register</button>
                 </form>
                 
-                <aside>
+                <aside role='complementary'>
                     <h2>Contact Information</h2>
                     <section>
                         <p>Have questions or concerns? Reach out to us directly&#58;</p>
@@ -288,5 +291,6 @@
                 </aside>
             </main>
         </div>
+        <script src="javascript.js"></script>
 	</body>
 </html>

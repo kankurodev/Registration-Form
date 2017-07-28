@@ -1,6 +1,7 @@
 main {
     display: flex;
     justify-content: space-between;
+    padding: 0 0 5rem 0;
     @include mq(small) {
         flex-direction: column;
     }
@@ -26,6 +27,10 @@ input {
     padding: 0 0.5rem 0 0.5rem;
 }
 
+select:focus, input:focus {
+    border: 1px solid $dark-text;
+}
+
 label, select, button {
     margin: 0 0 0 3rem;
 }
@@ -37,6 +42,12 @@ label {
 select {
     height: 2.5rem;
     width: 22.5rem;
+    background-color: #ccc;
+    appearance: none;
+    padding: 0 0.5rem 0 0.5rem;
+    background: url('../images/down-chevron.svg') 96% / 15% no-repeat #ccc;
+    background-size: 8%;
+    border: none;
 }
 
 button {
