@@ -118,6 +118,6 @@ register.addEventListener('click', (event) => {
     
     if (phoneErrors == false && emailErrors == false && passwordErrors == false && phoneErrors == false) {
         form.style.display = "none";
-        main.insertAdjacentHTML('afterbegin', '<section id="success"><h2>Register</h2><img src="../images/circle-check.svg" alt="Check Icon" /><p>Awesome! You\'re registered.</p></section>')
+        main.insertAdjacentHTML('afterbegin', '<section id="success"><h2>Register</h2><img src="./images/circle-check.svg" alt="Check Icon" /><p>Awesome! You\'re registered.</p></section>')
     }
 });
